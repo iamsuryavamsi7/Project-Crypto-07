@@ -1,0 +1,16 @@
+		
+		
+		Project-Crypto-07 Time Table
+
+|----------------------------------------------------------------------------------------------------------------|
+|   From Date   |   To Date      | Work                          | Topics                                        |
+|----------------------------------------------------------------------------------------------------------------|
+|   27-08-2023  |   28-08-2023   | Completing the git && github  | Overall.                                      |
+|   29-08-2023  |   30-08-2023   | Computer Network's            | Layer's, Port's, Overall Basic's.             |
+|   31-08-2023  |   31-08-2023   | Doubt's                       | In CN && git && github.                       |
+|   01-09-2023  |   10-09-2023   | Python Programming Language   | With basics && Django && small game's.        |
+|   11-09-2023  |   11-09-2023   | SQL (Oracle, Postgre, MySql)  | Overall Command and ACID's.                   |
+|   12-09-2023  |   20-09-2023   | Bash Scripting                | Overall.                                      |
+|   20-09-2023  |   30-09-2023   | Golang Programming Language   | Overall.                                      |
+|   01-10-2023  |   15-10-2023   | java Programming language     | Overall && Creating atlease one android app.  |
+|----------------------------------------------------------------------------------------------------------------|
