@@ -1,0 +1,38 @@
+		Created by "Crypto"
+
+			Git:-
+
+1)What is GIT?
+
+SOl) 1) GIT is a version control system.
+     2) It is a tool used for Github 
+     3) Github is a website which will help us
+	to create or store our files in their
+	DB's
+-------------------------------------------------
+	Important Stages:-
+
+	1) Remote Repository
+	2) Local Repository
+	3) Staging Area
+	4) Working Directory
+
+Git Commands:-
+	
+	1) git init:-
+		It will start and create the git
+		requirements for us to the spec-
+		ific folder (or) Directory.
+	2) git status:-
+		It will show us the status of our
+		git directory.
+	3) git 
+
+
+	
+	
+
+
+
+
+
