@@ -1,0 +1,8 @@
+	
+
+										Python with Django (Web Development):-
+										-------------------------------------
+										-------------------------------------
+
+1) What is Python?
+A) Python is the High-Level programming language
