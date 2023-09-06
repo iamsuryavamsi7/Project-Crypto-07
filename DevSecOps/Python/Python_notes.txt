@@ -22,6 +22,7 @@ A)
 			  print(price)
 
 			  Output:-
+			  ______
 
 				10  ""
 		
@@ -31,5 +32,27 @@ A)
 			  print(price + 23)
 
 			  Output:-
+			  ______
 
 				23 ""
+
+				(Or)
+
+			"  price = 10	--->		NOTE:-	PYTHON INTERPRETER WILL GET EXCECUTED FROM TOP TO BOTTOM
+			   price = 20
+			   print(price)
+
+			   Output:-
+			   ______
+
+				 20  ""
+
+5) Data types in Python?
+A) There are mainly 4 types of data types and they are listed below
+
+	1) price = 10 (Number datatype (Or) Integer datatype)
+	2) name = "Crypto" (Character datatype)
+	3) grade = 7.9 (Floating number or Floating datatype)
+	4) is_real = False (Or) True (Boolean Value)
+
+6)
