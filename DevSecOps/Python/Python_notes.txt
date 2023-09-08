@@ -93,4 +93,27 @@ A) Code:-
 		weight_kgs = int(weight_lbs) * 0.45
 		print(weight_kgs)	"""
 
-9) int 
+9) What is the formatted strings?
+A) Formatted strings are used for simplifying our code with letter called "f".
+
+	Example Code:-
+
+		""	first = "Crypto"
+			last = "Dhana Sri"
+			msg = f"{first}, [{last}] is a coder"
+
+		Output:- Crypto, Dhana Sri is a coder	""
+
+10) Definition of string method's in Python?
+A) Sting Method's are the function's which let us to perform specific task as per our requirements.
+
+Examples:-
+
+course.upper()
+course.lower()
+course.title()
+course.find()
+course.replace()
+"..." in course
+
+11) 
