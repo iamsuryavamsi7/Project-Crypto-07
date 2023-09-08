@@ -49,10 +49,48 @@ A)
 
 5) Data types in Python?
 A) There are mainly 4 types of data types and they are listed below
+	
+   Datatypes:-
+	
+	1) int = Integer
+	2) float = floating number
+	3) str = string 
+	4) True or False = boolean function
+   
+   Example's:-
 
 	1) price = 10 (Number datatype (Or) Integer datatype)
 	2) name = "Crypto" (Character datatype)
 	3) grade = 7.9 (Floating number or Floating datatype)
 	4) is_real = False (Or) True (Boolean Value)
 
-6)
+6) What is datatype conversion in Python and how it will be help to us?
+A) Datatype conversion is the one of the important topic in programming language called "Python". Because it will help us to convert out datatypes from (int to str) or (str to int)
+
+	Datatype conversion:-
+
+		1) int()
+		2) float()
+		3) bool()
+		4) str()
+	
+	For example code for datatype conversion:-
+
+		"""	
+			birth_year = input("""
+				What is your BirthYear:- """)
+			age = 2023 - birth_year
+			print(age)	"""
+
+7) What is print(type(value))?
+A) It is a simple function or a command in python to know the datatype of the value.
+
+8) Write a code for converting a person age from lbs to kgs?
+A) Code:-
+	
+	"""
+		weight_lbs = input("Weight_lbs:- ")
+		weight_kgs = int(weight_lbs) * 0.45
+		print(weight_kgs)	"""
+
+9) int 
