@@ -105,15 +105,43 @@ A) Formatted strings are used for simplifying our code with letter called "f".
 		Output:- Crypto, Dhana Sri is a coder	""
 
 10) Definition of string method's in Python?
-A) Sting Method's are the function's which let us to perform specific task as per our requirements.
+A)  Sting Method's are the function's which let us to perform specific task as per our requirements.
 
-Examples:-
+	Examples:-
 
-course.upper()
-course.lower()
-course.title()
-course.find()
-course.replace()
-"..." in course
+		course.upper()
+		course.lower()
+		course.title()
+		course.find()
+		course.replace()
+		"..." in course
 
-11) 
+11) What are Logical Operator's?
+A)  Logical Operator's are used for getting the information logically.
+
+	Logical Operator's:-
+
+		1) And :- Both statements should be True.
+		2) Or  :- Atleast one statement should be True.
+		3) Not :- It will inverse the value.
+		
+12) What are comparision operator's?
+A)  Comparision operator's are used for comparing the values in the given information or anything like degree's.
+
+	Comparision Operator's:-
+		
+		1) < :- Less Than Operator
+		2) > :- Greater Than Operator
+		3) == :- Equal Than Operator
+		4) <= :- Less than or Equalthan Operator
+		5) >- :- Greater than or Equalthan Operator
+		6) != :- Not equal than operator
+
+13) Project-Weight_Convertor.
+A)  Code for Weight_Convertor:-
+
+		""	weight = int(input("Weight:- "))
+			unit = input("(L)bs or (k) gs")
+		
+			if unit == "L":
+				
