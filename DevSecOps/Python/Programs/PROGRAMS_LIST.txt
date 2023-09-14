@@ -11,3 +11,6 @@
 	8.  Nested Loop
 	9.  F Word wih for loop
 	10. Max Number with for loop 
+	11. 2D list 
+	12. Removing Duplicate Number's with "append" keyword
+
