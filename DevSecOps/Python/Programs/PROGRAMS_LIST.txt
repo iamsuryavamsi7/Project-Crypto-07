@@ -8,3 +8,4 @@
 	5. For Loop
 	6. Secret Number
 	7. String
+	8. Nested Loop
