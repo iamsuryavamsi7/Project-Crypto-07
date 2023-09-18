@@ -1,0 +1,54 @@
+def car_game():
+    command = ""
+    started = False
+    print("Type 'help' for command's")
+
+    while command != "quit":
+        command = input("> ").lower()
+
+        if command == "start":
+            if started:
+                print("Car is already started")
+            else:
+                started = True
+                print("Car is started")
+        elif command == "stop":
+            if not started:
+                print("Car is already stopped")
+            else:
+                started = False
+                print("Car is stopped")
+        elif command == "quit":
+                break
+        elif command == "help":
+            print("""
+                start - To start the car
+                stop - To stop the car
+                help - To display this
+                quit - To quit
+            """)
+        else:
+            print("Sorry we can't understand your input")
+
+
+def weight_converter():
+    weight = int(input("Weight:- "))
+    unit = input("(K) gs or (L) bs:- ").upper()
+
+    if unit == "K":
+        converted1 = weight * .45
+        print(f"Your converted weight is {converted1}")
+    elif unit == "L":
+        converted2 = weight / .45
+        print(f"Your converted weight is {converted2}")
+    else:
+        print("Sorry we can't understand your input")
+
+
+program = input("car game (or) weight converter:- ")
+if program == "car game":
+    car_game()
+elif program == "weight converter":
+    weight_converter()
+else:
+    print("Sorry we can't understand your input")
