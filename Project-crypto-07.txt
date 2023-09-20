@@ -14,4 +14,8 @@
 |   15-09-2023  |   20-09-2023   | Bash Scripting                | Overall.                                      |
 |   20-09-2023  |   30-09-2023   | Golang Programming Language   | Overall.                                      |
 |   01-10-2023  |   15-10-2023   | java Programming language     | Overall && Creating atlease one android app.  |
+|   15-10-2023  |   30-10-2023   | kubernetes			 | Overall 					 |
+|   31-11-2023  |   15-11-2023   | Block Chain Technology        | Overall && decentralised WEB 3.0 include      |	
+|   16-11-2023  |   30-11-2023   | Bug Hunting			 | Overall Bug's				 |
+|   01-12-2023  |   15-12-2023   | Cryptography (MASTER)	 | Overall					 |
 |----------------------------------------------------------------------------------------------------------------|

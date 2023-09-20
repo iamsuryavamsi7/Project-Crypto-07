@@ -17,18 +17,60 @@ A) Tirupati
 A) O (+) or O Positive
 
 6) What courses are completed till now?
-A) They are listed here:-                                      |              Required Courses					|	       Status
-                                                               |								|		
-	1) Computer Basic's                                    |		1) Computer Basic's                     	|		Done
-	2) Networking                                          |		2) Networking					|		Done
-	3) Linux Basic's                                       |		3) Linux Basic's				|		Done
-	4) Git and Github                                      |		4) Git and Github				|		Done
-	5) SQL                                                 |		5) SQL						|		NO
-	6) Computer Typing                                     |		6) Computer Typing				|		Done
-	7) System's hardware                                   |		7) System' Hardware				|		Done
-                                                               |		8) Bash Scripting				|		NO
-   These are the things that i have Completed...               |		9) Python					|		NO
-							       |	       10) Cloud Basic's				|		NO
-                                                               |	       11) Java						|		NO
-							       |	       12) Web Development && App Development		|		NO
+A) They are listed here:-                                     
+                                                               
+	1)  Computer Basic's                                   
+	2)  Networking                                          
+	3)  Linux Basic's                                       
+	4)  Git and Github                                    
+	5)  SQL                                                
+	6)  Computer Typing                                   
+	7)  System's Hardware 
+	8)  Computer Typing
+	9)  Android Hacking
+	10) Web Development (Only Front-End and Animation's)
+	11) Network Scanning
+	12) Accessing the CCTV with open ports 
+	13) DDOS Attack to turn down the Server
+	14) WIFI Hacking
+	15) MITM Attack
+	16) XSS
+	17) SQL Injection
+	18) HTML	
+	19) CSS (With Animation's and Mobile View for all devices)
+	20) JavaScript Web Development based 
+	21) OTP Bypass Bug	(Client Side Only)
+	22) Windows Hacking
+	23) Operating System's basics (Which includes Windows, Kali Linux Kernel, Ubuntu Linux Kernel, Parrot OS, Tails Linux, Fedora Linux, Red Hat OS, Mint Linux and more)
+	24) Installing Trojen's in Android and Windows OS ...
+                                                              
+   These are the things that i have Completed...              
+
+
+	|-----------------------------------------------------------------------------------------------|
+	|              Required Courses					|	       Status		|
+	|-----------------------------------------------------------------------------------------------|
+	|		1) Computer Basic's                     	|		Done		|
+	|		2) Networking					|		Done		|
+	|		3) Linux Basic's				|		Done		|
+	|		4) Android Hacking				|		Done		|
+	|		5) SQL						|		Done		|
+	|		6) Computer Typing				|		Done		|
+	|		7) System' Hardware				|		Done		|
+	|		8) Bash Scripting				|		NO		|
+	|		9) Python					|		NO		|
+	|	       10) Cloud Basic's				|		NO		|
+	|	       11) Java						|		NO		|
+	|	       12) Web Development && App Development		|		NO		|
+	|	       13) XSS						|		Done		|
+	|	       14) Command Injection				|		NO		|
+	|	       15) SQL Injection				|		Done		|
+	|	       16) OTP Bypass Client Side			|		Done		|
+	|	       17) Cross-Site-Scripting				|		Done		|
+	|	       18) Cross-Site-Request-Forgery			|		NO		|
+	|	       19) Kubernetes					|		NO		|
+	|	       20) Block Chain Technology			|		NO		|
+	|	       21) Bug Hunting					|		Partial		|
+	|	       22) Cryptography (MASTER)			|		NO		| 
+	|-----------------------------------------------------------------------------------------------|
 
