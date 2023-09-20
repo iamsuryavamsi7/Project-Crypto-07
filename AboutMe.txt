@@ -77,9 +77,10 @@ A) They are listed here:-
 	|	       16) OTP Bypass Client Side			|		Done		|
 	|	       17) Cross-Site-Scripting				|		Done		|
 	|	       18) Cross-Site-Request-Forgery			|		NO		|
-	|	       19) Kubernetes					|		NO		|
-	|	       20) Block Chain Technology			|		NO		|
-	|	       21) Bug Hunting					|		Partial		|
-	|	       22) Cryptography (MASTER)			|		NO		| 
+	|	       19) No-Rate-Bug					|		Done		|
+	|	       20) Kubernetes					|		NO		|
+	|	       21) Block Chain Technology			|		NO		|
+	|	       22) Bug Hunting					|		Partial		|
+	|	       23) Cryptography (MASTER)			|		NO		| 
 	|-----------------------------------------------------------------------------------------------|
 
