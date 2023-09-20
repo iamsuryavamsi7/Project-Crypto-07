@@ -1,6 +1,7 @@
 		
 		
 		                   Road Manp to Project-Crypto-07
+				   ==============================
 
 |----------------------------------------------------------------------------------------------------------------|
 |   From Date   |   To Date      | Work                          | Topics                                        |
@@ -15,7 +16,18 @@
 |   20-09-2023  |   30-09-2023   | Golang Programming Language   | Overall.                                      |
 |   01-10-2023  |   15-10-2023   | java Programming language     | Overall && Creating atlease one android app.  |
 |   15-10-2023  |   30-10-2023   | kubernetes			 | Overall 					 |
-|   31-11-2023  |   15-11-2023   | Block Chain Technology        | Overall && decentralised WEB 3.0 include      |	
-|   16-11-2023  |   30-11-2023   | Bug Hunting			 | Overall Bug's				 |
-|   01-12-2023  |   15-12-2023   | Cryptography (MASTER)	 | Overall					 |
+|   31-10-2023  |   15-11-2023	 | CICD (Continuous Integration) | Overall Tool's				 |
+|   16-11-2023  |   30-11-2023   | Block Chain Technology        | Overall && decentralised WEB 3.0 include      |	
+|   01-12-2023  |   15-12-2023   | Bug Hunting			 | Overall Bug's				 |
+|   16-12-2023  |   30-12-2023   | Cryptography (MASTER)	 | Overall					 |
 |----------------------------------------------------------------------------------------------------------------|
+
+
+				Required Certificates:-
+				=====================
+
+				1)  Computer application's degree Certificate
+				2)  Cloud based advanced Certificate
+				3)  Certified Kubernetes associative
+				4)  Google Docker Certificate
+				5)  Certified Ethical Hacker (Master)
