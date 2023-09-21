@@ -3,7 +3,7 @@
 
 	1.  Hello World
 	2.  Car Game
-	3.  Project Love
+	3.  While Loops
 	4.  Weight Converter
 	5.  For Loop
 	6.  Secret Number
