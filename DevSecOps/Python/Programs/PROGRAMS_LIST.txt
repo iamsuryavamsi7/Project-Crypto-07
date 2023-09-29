@@ -19,3 +19,5 @@
 	16. Functions2 in Python
 	17. Try and Catch program
 	18. Try Catch Value error and zerodivisionerror
+	19. Class in Python
+	20. Constructor in Python
