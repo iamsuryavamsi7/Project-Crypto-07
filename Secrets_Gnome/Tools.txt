@@ -1,2 +1,0 @@
-1)  What is alacarte?
-A)  It is a tool used for creating the desktop shortcut's in the Kali Linux GNOME Environment or in any environment ..
