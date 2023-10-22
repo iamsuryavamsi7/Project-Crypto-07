@@ -37,7 +37,7 @@ A) They are listed here:-
 	7)  System's Hardware 
 	8)  Computer Typing
 	9)  Android Hacking
-	10) Web Development (Only Front-End and Animation's)
+	10) Web Development (With Animation's)
 	11) Network Scanning
 	12) Accessing the CCTV with open ports 
 	13) DDOS Attack to turn down the Server
@@ -52,6 +52,7 @@ A) They are listed here:-
 	22) Windows Hacking
 	23) Operating System's basics (Which includes Windows, Kali Linux Kernel, Ubuntu Linux Kernel, Parrot OS, Tails Linux, Fedora Linux, Red Hat OS, Mint Linux and more)
 	24) Installing Trojen's in Android and Windows OS ...
+	25) Django Framework (For Web Development in Back End)
                                                               
    These are the things that i have Completed...              
 
@@ -67,7 +68,7 @@ A) They are listed here:-
 	|		6) Computer Typing				|		Done		|
 	|		7) System' Hardware				|		Done		|
 	|		8) Bash Scripting				|		NO		|
-	|		9) Python					|		NO		|
+	|		9) Python					|		Done		|
 	|	       10) Cloud Basic's				|		NO		|
 	|	       11) Java						|		NO		|
 	|	       12) Web Development && App Development		|		NO		|
