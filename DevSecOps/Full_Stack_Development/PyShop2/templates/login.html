@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+</head>
+<body>
+    <a href="/"> Home </a>
+    <div>
+        In this page you can do login.
+    </div><br><br>
+    <form action="{% url 'login' %}" method="post">
+
+        {% csrf_token %}
+
+        Username :- <input type="text" name="username"><br>
+        Password :- <input type="password" name="password"><br><br>
+
+        <input type="submit">
+
+    </form><br><br>
+    <div>
+        {% for message in messages %}
+        {{ message }}
+        {% endfor %}
+    </div>
+</body>
+</html>

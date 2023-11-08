@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index Page</title>
+</head>
+<body>
+
+    <div>
+        <ul>
+
+            {% if user.is_authenticated == True  %}
+
+            <li> Hello {{ user.first_name }} </li>
+            <li> <a href="/accounts/logout"> Log out </a></li>
+
+            {% else %}
+
+            <li> <a href="/accounts/register">Register</a> </li>
+            <li> <a href="/accounts/login">Log in</a> </li>
+
+            {% endif %}
+
+
+        </ul>
+    </div>
+    <div>
+        This is the products main page.
+    </div>
+    <div>
+        <ul>
+            {% for product in products %}
+            <li>{{product.place}}</li>
+            <li>{{product.desc}}</li> <br>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
