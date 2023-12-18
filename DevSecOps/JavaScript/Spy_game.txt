@@ -1,0 +1,55 @@
+// Questions
+
+var firstName = prompt("First Name Please:- ");
+var lastName = prompt("Last Name Please:- ");
+var age = prompt("How old are you:- ");
+var height = prompt("What is your height:- ");
+var petName = prompt("What is your pet's name:- ");
+alert("Thank you so much for the information!");
+
+// Four Conditions
+
+var nameCond = null;
+var ageCond = null;
+var heightCond = null;
+var petCond = null;
+
+// Name Condition
+
+if (firstName[0] === lastName[0]){
+    nameCond = true;
+}else {
+    nameCond = false;
+}
+
+// Age Condition
+
+if (age < 30 && age > 20){
+    ageCond = true;
+}else {
+    ageCond = false;
+}
+
+// height Condition
+
+if (height < 180 && height > 170){
+    heightCond = true;
+}else {
+    heightCond = false;
+}
+
+// Pet Condition
+
+if (petName[petName.length-1] === "y"){
+    petCond = true;
+}else{
+    heightCond = false;
+}
+
+// Check all conditions
+
+if (nameCond && ageCond && heightCond && petCond === true){
+    console.log("WELCOME SPY!")
+}else {
+    console.log("NOTHING TO SEE HERE.")
+}
