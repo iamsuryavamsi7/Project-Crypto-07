@@ -53,6 +53,8 @@ A) They are listed here:-
 	23) Operating System's basics (Which includes Windows, Kali Linux Kernel, Ubuntu Linux Kernel, Parrot OS, Tails Linux, Fedora Linux, Red Hat OS, Mint Linux and more)
 	24) Installing Trojen's in Android and Windows OS ...
 	25) Django Framework (For Web Development in Back End)
+	26) JavaScript
+	27) Python
                                                               
    These are the things that i have Completed...              
 
@@ -78,7 +80,7 @@ A) They are listed here:-
 	|	       16) OTP Bypass Client Side			|		Done		|
 	|	       17) Cross-Site-Scripting				|		Done		|
 	|	       18) Cross-Site-Request-Forgery			|		NO		|
-	|	       19) No-Rate-Bug					|		Done		|
+	|	       19) No-Rate-limit-Bug				|		Done		|
 	|	       20) Kubernetes					|		NO		|
 	|	       21) Block Chain Technology			|		NO		|
 	|	       22) Bug Hunting					|		Partial		|
