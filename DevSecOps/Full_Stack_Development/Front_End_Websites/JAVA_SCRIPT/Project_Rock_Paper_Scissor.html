@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Project Calculator </title>
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 30px 30px;
+        }
+
+        .row1{
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        .row2{
+            margin-bottom: 20px;
+        }
+
+        button{
+            font-size: 20px;
+            padding: 5px 10px;
+            margin-right: 2px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="row1"> Rock Paper Scissors </div>
+
+    <div class="row2">
+
+        <button onclick="
+        
+            console.log(`Total Cart:- ${totalCart}`);
+
+        "> Show Cart Quantity </button>
+
+        <button onclick="
+
+            carting(9, 1);
+        
+        "> Add to cart </button>
+
+        <button onclick="
+        
+        carting(8, 2);
+    
+        "> +2 </button>
+
+        <button onclick="
+        
+        carting(7, 3);
+
+        "> +3 </button>
+
+        <button onclick="
+
+            carting(6, 4);
+
+        "> +4 </button>
+
+        <button onclick="
+        
+        carting(5, 5);
+
+        "> +5 </button>
+
+    </div>
+
+    <div class="row2">
+
+        <button onclick="
+        
+        cartingMinus(1);
+
+        "> Removed from cart </button>
+
+        <button onclick="
+        
+        cartingMinus(2);
+    
+        "> -2 </button>
+
+        <button onclick="
+        
+        cartingMinus(3);
+
+        "> -3 </button>
+
+        <button onclick="
+        
+        reset();
+
+        "> Reset </button>
+
+    </div>
+
+    <script>
+
+        let totalCart = 0;
+
+        function carting(para1, para2){
+            if (totalCart <= para1){
+
+                totalCart = totalCart + para2;
+                console.log(`Updated Cart:- ${totalCart}`)
+
+            } else{
+                console.log(`Sorry the Quantity will go high than 10`)
+            }
+        }
+
+        function cartingMinus(para1){
+            if (totalCart >= para1){
+
+                totalCart -= para1;
+                console.log(`Updated Cart:- ${totalCart}`)
+
+            } else{
+                console.log(`Sorry the Quantity will go down than 0`);
+            }
+        }
+
+        function reset(){
+
+            totalCart = totalCart - totalCart
+            console.log(`Updated cart is:- ${totalCart}`);
+
+        }
+
+    </script>
+    
+</body>
+</html>

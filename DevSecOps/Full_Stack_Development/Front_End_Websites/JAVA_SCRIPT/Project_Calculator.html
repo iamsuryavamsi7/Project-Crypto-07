@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Practice Page </title>
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: 0;
+        }
+
+        body{
+            margin: 20px 0px 0px 20px;
+            background-color: black;
+        }
+
+        .class1{
+            font-size: 25px;
+            color: white;
+        }
+
+        button{
+            margin: 20px 10px 0px 0px;
+            font-size: 40px;
+            padding: 20px 30px;
+            color: white;
+            background-color: rgb(51, 51, 51);
+            border: none;
+            border-radius: 50%;   
+        }
+
+        #operators{
+            background-color: orange;
+        }
+
+        #clear{
+            font-size: 20px;
+            border-radius: 78%;
+            padding: 30px 20px;
+        }
+
+        #dot{
+            padding: 20px 35px;
+        }
+
+        .slash{
+            padding: 20px 32px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="class1"> Calculator </div>
+
+    <div class="row1">
+        
+        <button id="buttonColumn1" onclick="
+            
+            calculate(`1`);
+            
+        "> 1 </button>
+
+        <button onclick="
+            
+            calculate(`2`);
+        
+        "> 2 </button>
+
+        <button onclick="
+
+            calculate(`3`);
+
+        "> 3 </button>
+
+        <button id="operators" onclick="calculate(`+`)"> + </button>
+
+    </div>
+
+    <div class="row2">
+        
+        <button id="buttonColumn1" onclick="
+            
+            calculate(`4`);
+
+            "> 4 </button>
+
+        <button onclick="
+        
+            calculate(`5`);
+
+        "> 5 </button>
+
+        <button onclick="
+        
+            calculate(`6`);
+            
+        "> 6 </button>
+
+        <button id="operators" onclick="calculate(`-`);"> - </button>
+
+    </div>
+
+    <div class="row3">
+        
+        <button id="buttonColumn1" onclick="calculate(`7`)"> 7 </button>
+
+        <button onclick="calculate(`8`);"> 8 </button>
+
+        <button onclick="calculate(`9`);"> 9 </button>
+
+        <button id="operators" onclick="calculate(`*`);"> * </button>
+
+    </div>
+
+    <div class="row4">
+        
+        <button id="buttonColumn1" onclick="calculate(`0`);"> 0 </button>
+
+        <button id="dot" onclick="calculate(`.`);"> . </button>
+
+        <button id="equal" onclick="equalsumbol()"> = </button>
+
+        <button id="operators" class="slash" onclick="calculate(``);"> / </button>
+
+    </div>
+
+    <div class="row5">
+
+        <button id="clear" onclick="clearFunction()"> Clear </button>
+
+    </div>
+
+    <script>
+
+        let calculation = '';
+
+        function calculate(value){
+
+            calculation += value;
+
+            console.log(calculation);
+
+        }
+
+        function equalsumbol(){
+
+            calculation  =  eval(calculation);
+
+            console.log(String(calculation));
+
+        }
+
+        function clearFunction(){
+
+            calculation = calculation - calculation;
+
+            console.log(String(calculation));
+
+        }
+
+    </script>    
+    
+</body>
+</html>
