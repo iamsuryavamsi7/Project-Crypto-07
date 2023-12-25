@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cart Quantity </title>
+
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: 0;
+        }
+
+        div{
+            font-size: 20px;
+            margin-left: 10px;
+            margin-top: 20px;
+        }
+
+        button{
+            margin-top: 20px;
+            font-size: 20px;
+            margin-left: 2px;
+            padding: 5px 10px;
+        }
+
+        #first_Button{
+            margin-left: 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div> Cart Quantity </div>
+
+    <button id="first_Button" onclick="
+
+        console.log(`Total Quantity of cart:- ${cartQuantity}`);
+
+    "> Show Quantity </button>
+
+    <button onclick="
+        
+        (cartQuantity <= 9 ? cartQuantity += 1 : alert(`Sorry we can't add more than 10 items in cart`))
+        console.log(`Added to cart:- ${cartQuantity}`);
+
+    "> Add to Cart </button>
+
+    <button onclick="
+    
+       (cartQuantity <= 8 ? cartQuantity += 2 : alert(`Sorry we can't add more than 10 items in cart`))
+        console.log(`Added to cart:- ${cartQuantity}`);
+
+    "> +2 </button>
+
+    <button onclick="
+    
+        (cartQuantity <= 7 ? cartQuantity += 3 : alert(`Sorry we can't add more than 10 items in cart`))
+        console.log(`Added to cart:- ${cartQuantity}`);
+
+    "> +3 </button>
+
+    <button onclick="
+    
+        (cartQuantity <= 6 ? cartQuantity += 4 : alert(`Sorry we can't add more than 10 items in cart`))
+        console.log(`Added to cart:- ${cartQuantity}`);
+
+    "> +4 </button>
+
+    <button onclick="
+    
+        (cartQuantity <= 5 ? cartQuantity += 5 : alert(`Sorry we can't add more than 10 items in cart`))
+        console.log(`Added to cart:- ${cartQuantity}`);
+
+    "> +5 </button>
+
+    <button onclick="
+    
+        cartQuantity = cartQuantity - cartQuantity;
+        console.log(`Cart reseted to- ${cartQuantity}`);
+    
+    "> Reset Cart</button>
+
+    <div class="div1">
+
+            <button onclick="
+
+            if (cartQuantity > 0){
+            
+                cartQuantity--;
+
+            } else{
+                alert(`It can't go below than 0`);
+            }
+            
+            console.log(`removed from cart:- ${cartQuantity}`);
+
+        "> Remove from Cart </button>
+
+        <button onclick="
+
+            if (cartQuantity >= 2){
+                
+                cartQuantity -= 2;
+
+            } else{
+                alert(`It can't go below than 0`);
+            }
+
+            console.log(`removed from cart:- ${cartQuantity}`);
+
+        "> -2 </button>
+
+        <button onclick="
+        
+            ( cartQuantity >= 3 ? cartQuantity -= 3 : alert(`It can't go down than 0`));
+
+            console.log(`removed from cart:- ${cartQuantity}`);
+
+        "> -3 </button>
+        
+    </div>
+
+    <script>
+
+        let cartQuantity = 0;
+
+    </script>
+    
+</body>
+</html>
