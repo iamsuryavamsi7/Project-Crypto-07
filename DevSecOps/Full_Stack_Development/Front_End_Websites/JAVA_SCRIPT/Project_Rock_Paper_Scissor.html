@@ -3,138 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Project Calculator </title>
+    <title> Roack Paper Scissors Game </title>
+
     <style>
 
-        *{
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
+        .line1{
+            font-size: 20px;
+            margin: 30px 0 30px 30px ;
         }
 
-        body{
-            margin: 30px 30px;
-        }
-
-        .row1{
-            font-size: 25px;
-            margin-bottom: 20px;
-        }
-
-        .row2{
-            margin-bottom: 20px;
+        .buttons{
+            margin: 0px 0 0 30px;
         }
 
         button{
+            padding: 10px;
             font-size: 20px;
-            padding: 5px 10px;
-            margin-right: 2px;
+            margin-right: 10px;
         }
 
     </style>
 </head>
 <body>
 
-    <div class="row1"> Rock Paper Scissors </div>
+    <div class="line1"> Rock paper Scissors</div>
 
-    <div class="row2">
+    <div class="buttons">
 
-        <button onclick="
-        
-            console.log(`Total Cart:- ${totalCart}`);
+        <button onclick="playGame(`Rock`);"> Rock </button>
 
-        "> Show Cart Quantity </button>
+        <button onclick="playGame(`Paper`)"> Paper </button>
 
-        <button onclick="
+        <button onclick="playGame(`Scissors`)"> Scissors </button>
 
-            carting(9, 1);
-        
-        "> Add to cart </button>
-
-        <button onclick="
-        
-        carting(8, 2);
-    
-        "> +2 </button>
-
-        <button onclick="
-        
-        carting(7, 3);
-
-        "> +3 </button>
-
-        <button onclick="
-
-            carting(6, 4);
-
-        "> +4 </button>
-
-        <button onclick="
-        
-        carting(5, 5);
-
-        "> +5 </button>
-
-    </div>
-
-    <div class="row2">
-
-        <button onclick="
-        
-        cartingMinus(1);
-
-        "> Removed from cart </button>
-
-        <button onclick="
-        
-        cartingMinus(2);
-    
-        "> -2 </button>
-
-        <button onclick="
-        
-        cartingMinus(3);
-
-        "> -3 </button>
-
-        <button onclick="
-        
-        reset();
-
-        "> Reset </button>
+        <button onclick="scoreReset();"> Reset Score </button>
 
     </div>
 
     <script>
 
-        let totalCart = 0;
+        const score = JSON.parse(localStorage.getItem(`score`));
 
-        function carting(para1, para2){
-            if (totalCart <= para1){
+        let computerPicked = ``;
 
-                totalCart = totalCart + para2;
-                console.log(`Updated Cart:- ${totalCart}`)
+        let result = ``;
 
-            } else{
-                console.log(`Sorry the Quantity will go high than 10`)
+        function computerChoice(){
+
+            const randomNumber = Math.random();
+
+            if (randomNumber > 0 && randomNumber <= 1 / 3){
+
+                computerPicked = `Rock`;
+
+            } else if (randomNumber > 1 / 3 && randomNumber <= 2 / 3){
+
+                computerPicked = `Paper`;
+
+            } else if (randomNumber > 2 / 3 && randomNumber <= 1){
+
+                computerPicked = `Scissors`;
+
             }
+
+            return computerPicked;
+
         }
 
-        function cartingMinus(para1){
-            if (totalCart >= para1){
+        function playGame(playerChoice){
 
-                totalCart -= para1;
-                console.log(`Updated Cart:- ${totalCart}`)
+            let computerPickedValue = computerChoice();
 
-            } else{
-                console.log(`Sorry the Quantity will go down than 0`);
+            if (playerChoice === `Rock`){
+
+                if (computerPickedValue === `Rock`){
+
+                    result = `Tie`;
+
+                } else if (computerPickedValue === `Paper`){
+
+                    result = `You Loose`;
+
+                } else if (computerPickedValue === `Scissors`){
+
+                    result = `You Win`;
+
+                }
+
+            } else if (playerChoice === `Paper`){
+
+                if (computerPickedValue === `Rock`){
+
+                    result = `You Win`;
+
+                } else if (computerPickedValue === `Paper`){
+
+                    result = `Tie`;
+
+                } else if (computerPickedValue === `Scissors`){
+
+                    result = `You Loose`;
+
+                }
+
+            } else if (playerChoice === `Scissors`){
+
+                if (computerPickedValue === `Rock`){
+
+                    result = `You Loose`;
+
+                } else if (computerPickedValue === `Paper`){
+
+                    result = `You Win`;
+
+                } else if (computerPickedValue === `Scissors`){
+
+                    result = `Tie`;
+
+                }
+
             }
+
+            if (result === `You Win`){
+
+                score.wins ++;
+
+            } else if (result === `You Loose`){
+
+                score.looses ++;
+
+            } else if (result === `Tie`){
+
+                score.ties ++;
+
+            }
+
+            localStorage.setItem('score', JSON.stringify(score));
+
+
+            alert(`You Choosed ${playerChoice}. Computer Choosed ${computerPickedValue}. So the result is ${result}\n   
+                  Wins:- ${score.wins}, Looses:- ${score.looses}, Ties:- ${score.ties}`);
+
         }
 
-        function reset(){
+        function scoreReset(){
 
-            totalCart = totalCart - totalCart
-            console.log(`Updated cart is:- ${totalCart}`);
+            score.wins = 0;
+            
+            score.looses = 0;
+
+            score.ties = 0;
 
         }
 
