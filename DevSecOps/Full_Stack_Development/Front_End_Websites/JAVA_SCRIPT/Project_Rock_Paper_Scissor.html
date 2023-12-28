@@ -42,7 +42,17 @@
 
     <script>
 
-        const score = JSON.parse(localStorage.getItem(`score`));
+        let score = JSON.parse(localStorage.getItem(`score`));
+
+        if (!score){
+
+            score = {
+                wins: 0,
+                looses: 0,
+                ties: 0
+            }
+
+        }
 
         let computerPicked = ``;
 
@@ -153,6 +163,8 @@
             score.looses = 0;
 
             score.ties = 0;
+
+            localStorage.removeItem(`score`);
 
         }
 
