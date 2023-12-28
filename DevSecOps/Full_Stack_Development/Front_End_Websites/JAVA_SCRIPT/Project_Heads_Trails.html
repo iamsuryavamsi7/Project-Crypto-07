@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Heads and trails Game </title>
+
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            display: flex;
+            background-color: black;
+            width: 100%;
+            height: 1000px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button{
+            padding: 20px;
+            border-radius: 10px;
+            border: none;
+            margin-right: 50px;
+            background-color: grey;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <button onclick="playGame(`Heads`);"> Heads </button>
+        <button onclick="playGame(`Tails`)"> Tails </button>
+        <button onclick="resetScore()"> Reset </button>
+
+    </div>
+
+    <script>
+
+        let score = JSON.parse(localStorage.getItem(`score`)) || {
+
+            wins: 0,
+            looses: 0
+
+        }
+
+        function computerChoosed(){
+
+            let randomNumber = Math.random();
+
+            let computerChoosedValue = ``;
+
+            if (randomNumber > 0 && randomNumber <= 0.5){
+
+                computerChoosedValue = `Heads`;
+
+            } else if (randomNumber > 0.5 && randomNumber <= 1){
+
+                computerChoosedValue = `Tails`;
+
+            }
+
+            return computerChoosedValue;
+
+        }
+
+        function playGame(playerPicked){
+
+            let computerPicked = computerChoosed();
+
+            let result = ``;
+
+            if (playerPicked === `Heads`){
+
+                if (computerPicked === `Heads`){
+
+                    result = `You Win`;
+                
+                } else {
+
+                    result = `You Loose`;
+
+                }
+
+            } else if(playerPicked === `Tails`){
+
+                if (computerPicked === `Heads`){
+
+                    result = `You Loose`;
+
+                } else{
+
+                    result = `You Win`;
+
+                }
+
+            }
+
+            if ( result === `You Win`){
+
+                score.wins ++;
+
+            } else if (result === `You Loose`){
+
+                score.looses ++;
+
+            }
+
+            localStorage.setItem(`score`, JSON.stringify(score));
+
+            alert(`You Picked ${playerPicked}. Computer Picked ${computerPicked}. Result:- ${result}\n
+                  Wins:- ${score.wins}, Looses:- ${score.looses}`);
+
+        }
+
+        function resetScore(){
+
+            score.wins = 0;
+            score.looses = 0;
+
+            localStorage.removeItem(`score`);
+
+        }
+
+    </script>
+    
+</body>
+</html>
