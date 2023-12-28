@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cart Quantity </title>
+
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: 0;
+        }
+
+        div{
+            font-size: 20px;
+            margin-left: 10px;
+            margin-top: 20px;
+        }
+
+        button{
+            margin-top: 20px;
+            font-size: 20px;
+            margin-left: 2px;
+            padding: 5px 10px;
+        }
+
+        #first_Button, .cart_status{
+            margin-left: 10px;
+        }
+
+        .cart_status{
+
+            font-size: 30px;
+            margin-top: 30px;
+
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div> Cart Quantity </div>
+
+    <button id="first_Button" onclick="
+
+        document.querySelector(`.cart_status`)
+            .innerHTML = `Total Quantity of cart:- ${cartQuantity}`;
+
+    "> Show Quantity </button>
+
+    <button onclick="carting(9, 1);"> Add to Cart </button>
+
+    <button onclick="carting(8, 2);"> +2 </button>
+
+    <button onclick="carting(7, 3);"> +3 </button>
+
+    <button onclick="carting(6, 4)"> +4 </button>
+
+    <button onclick="carting(5, 5);"> +5 </button>
+
+    <button onclick="
+    
+        cartQuantity = 0;
+
+        document.querySelector(`.cart_status`)
+            .innerHTML = `Cart reseted to- ${cartQuantity}`;
+    
+    "> Reset Cart</button>
+
+    <div class="div1">
+
+            <button onclick="cartingminus(1, 1)"> Remove from Cart </button>
+
+        <button onclick="cartingminus(2, 2);"> -2 </button>
+
+        <button onclick="cartingminus(3, 3);"> -3 </button>
+        
+    </div>
+
+    <p class="cart_status"> Cart Status </p>
+
+    <script>
+
+        let cartQuantity = 0;
+
+        function carting(count1, count2){
+
+            (cartQuantity <= count1 ? cartQuantity += count2 : alert(`Sorry we can't add more than 10 items in cart`))
+
+            document.querySelector(`.cart_status`)
+                .innerHTML = `Added to cart:- ${cartQuantity}`;
+        
+        }
+
+        function cartingminus(count1, count2){
+
+            ( cartQuantity >= count1 ? cartQuantity -= count2 : alert(`It can't go down than 0`));
+
+            document.querySelector(`.cart_status`)
+            .innerHTML = `Removed from cart:- ${cartQuantity}`;
+
+        }
+
+    </script>
+    
+</body>
+</html>
