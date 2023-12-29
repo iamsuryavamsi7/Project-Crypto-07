@@ -54,7 +54,7 @@
 </head>
 <body>
 
-    <div class="class1"> Calculator </div>
+    <div class="class1">  </div>
 
     <div class="row1">
         
@@ -136,29 +136,41 @@
 
     <script>
 
-        let calculation = '';
+        let count = localStorage.getItem(`count`) ||``;
+
+        document.querySelector(`.class1`)
+                .innerHTML = count;
 
         function calculate(value){
 
-            calculation += value;
+            count += value;
 
-            console.log(calculation);
+            document.querySelector(`.class1`)
+                .innerHTML = count;
+
+            localStorage.setItem(`count`, count)
 
         }
 
         function equalsumbol(){
 
-            calculation  =  eval(calculation);
+            count  =  eval(count);
 
-            console.log(String(calculation));
+            document.querySelector(`.class1`)
+                .innerHTML = count;
+
+            localStorage.setItem(`count`, count)
 
         }
 
         function clearFunction(){
 
-            calculation = calculation - calculation;
+            count = count - count;
 
-            console.log(String(calculation));
+            document.querySelector(`.class1`)
+                .innerHTML = count;
+
+            localStorage.setItem(`count`, count)
 
         }
 
