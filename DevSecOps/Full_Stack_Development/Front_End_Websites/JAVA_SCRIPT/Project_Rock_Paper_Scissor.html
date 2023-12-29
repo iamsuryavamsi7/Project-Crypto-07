@@ -7,8 +7,15 @@
 
     <style>
 
+        body{
+            background-color: rgb(25, 25, 25);
+            color: white;
+            font-family: arial;
+        }
+
         .line1{
-            font-size: 20px;
+            font-size: 30px;
+            font-weight: bold;
             margin: 30px 0 30px 30px ;
         }
 
@@ -20,6 +27,46 @@
             padding: 10px;
             font-size: 20px;
             margin-right: 10px;
+            cursor: pointer;
+        }
+
+        button img{
+            padding: 40px;
+            width: 70px;
+            object-fit: cover;
+        }
+
+        .div3{
+            font-size: 20px;
+            margin-left: 30px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .div3_01{
+            margin-bottom: 70px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .div3_02{
+            margin-bottom: 70px;
+        }
+
+        .button_Reset{
+            margin-top: 40px;
+        }
+
+        .emoji{
+
+            background-color: transparent;
+            border: white solid 3px;
+            border-radius: 50%;
+        }
+
+        .icon_01{
+            width: 70px;
+            margin: 0px 20px;
         }
 
     </style>
@@ -30,13 +77,21 @@
 
     <div class="buttons">
 
-        <button onclick="playGame(`Rock`);"> Rock </button>
+        <button class="emoji" onclick="playGame(`Rock`);"> <img src="Images/Rock-emoji.png"> </button>
 
-        <button onclick="playGame(`Paper`);"> Paper </button>
+        <button class="emoji" onclick="playGame(`Paper`);"> <img src="/Images/Paper-emoji.png"> </button>
 
-        <button onclick="playGame(`Scissors`);"> Scissors </button>
+        <button class="emoji" onclick="playGame(`Scissors`);"> <img src="/Images/Scissors-emoji.png"> </button>
 
-        <button onclick="removeScore();"> Reset Score </button>
+    </div>
+
+    <div class="div3">
+
+        <div class="div3_01">result</div>
+        <div class="div3_02"></div>
+        <div class="div3_03">Wins:- , Looses:- , Ties:- </div>
+
+        <button class="button_Reset" onclick="removeScore();"> Reset Score </button>
 
     </div>
 
@@ -144,8 +199,14 @@
 
             localStorage.setItem(`score`, JSON.stringify(score));
 
-            alert(`You picked ${playerPicked}. Computer picked ${computerPicked}. Result:- ${result}\n
-                Wins:- ${score.wins}, Looses:- ${score.looses}, Ties:- ${score.ties}`);
+            document.querySelector(`.div3_01`)
+                .innerHTML = `${result}`;
+
+            document.querySelector(`.div3_02`)
+                .innerHTML = `Your <img class="icon_01" src="Images/${playerPicked}-emoji.png"> - Computer's <img class="icon_01" src="Images/${computerPicked}-emoji.png">`;
+
+            document.querySelector(`.div3_03`)
+                .innerHTML = ` Wins:- ${score.wins}, Looses:- ${score.looses}, Ties:- ${score.ties}`;
 
         }
 
@@ -158,6 +219,9 @@
             score.ties = 0;
 
             localStorage.removeItem(`score`);
+
+            document.querySelector(`.div3_03`)
+                .innerHTML = ` Wins:- ${score.wins}, Looses:- ${score.looses}, Ties:- ${score.ties}`;
 
         }
 
