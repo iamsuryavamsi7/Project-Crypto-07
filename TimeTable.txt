@@ -1,0 +1,43 @@
+
+
+	Full Stack Java Developer Time Table:- 
+	-------------------------------------
+
+
+		Time		 - Task
+
+		Morning:- 
+		-------
+
+		08:00 - 08:30	 - Getting Fresh
+		08:30 - 09:00	 - Watching News
+		09:00 - 09:10	 - Typing Practice
+		09:10 - 10:00	 - Studies
+		10:00 - 11:00	 - Tiffin (Food)
+		11:00 - 12:00	 - Studies
+
+		Afternoon:-
+		---------
+	
+		12:00 - 12:30	 - Taking Rest
+		12:30 - 14:00	 - Studies
+		14:00 - 15:00	 - Lunch (Food)
+		15:00 - 17:00	 - Sleep
+		17:00 - 17:10	 - Typing Practice
+		17:10 - 18:00	 - Studies
+
+		Evening:- 
+		-------
+
+		18:00 - 18:30	 - Taking Rest
+		18:30 - 19:30	 - Studies
+		19:30 - 20:00	 - Taking Rest
+
+		Night:- 
+		-----
+
+		20:00 - 21:00	 - Studies
+		21:00 - 22:00	 - Dinner
+		22:00 - 22:30	 - Studies
+		22:30 - 23:00	 - Taking Rest
+		23:00 - 08:00	 - Sleep
